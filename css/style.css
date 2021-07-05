@@ -31,7 +31,7 @@ html {
 body {
     height: 100%;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: 'Lato', sans-serif;
     color: rgba(0,0,0,.65);
     overflow: hidden;
@@ -227,6 +227,7 @@ a:link, a:active, a:visited {
     text-align: center;
     margin: 0 0 .5rem 0;
     font-weight: 400;
+    font-size: 4rem;
 }
 
 #name:link, #name:active, #name:visited {
@@ -534,7 +535,7 @@ a:link, a:active, a:visited {
 
 @media only screen and (max-width:1024px) {
     body {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .sidebar {
@@ -564,7 +565,7 @@ a:link, a:active, a:visited {
 
 @media only screen and (max-width:768px) {
     body {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .header-button {

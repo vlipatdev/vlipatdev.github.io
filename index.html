@@ -1,289 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="author" content="Val Lipat" />
-		<meta name="description" content="Welcome to my portfolio." />
-		<meta name="theme-color" content="#FFF" />
-		<title>Val Lipat | Front-end Developer</title>
 
-		<link rel="stylesheet" href="css/style.prefix.css" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Lato:300,400,600"
-			rel="stylesheet"
-		/>
-		<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="author" content="Val Lipat" />
+	<meta name="description" content="Welcome to my portfolio." />
+	<meta name="theme-color" content="#FFF" />
+	<title>Val Lipat | Front-end Developer</title>
 
-		<script src="js/script.js" defer></script>
-	</head>
-	<body>
-		<div class="loader">
-			<svg class="loader-spinner">
-				<use href="img/sprite.svg#spinner"></use>
-			</svg>
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,600" rel="stylesheet" />
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+
+	<script src="js/script.js" defer></script>
+</head>
+
+<body>
+	<div class="loader">
+		<svg class="loader-spinner">
+			<use href="img/sprite.svg#spinner"></use>
+		</svg>
+	</div>
+	<a class="nav-button">
+		<div class="nav-button-bar-container">
+			<div class="nav-button-bar nav-button-bar-1"></div>
+			<div class="nav-button-bar nav-button-bar-2"></div>
 		</div>
-		<a class="nav-button">
-			<div class="nav-button-bar-container">
-				<div class="nav-button-bar nav-button-bar-1"></div>
-				<div class="nav-button-bar nav-button-bar-2"></div>
+	</a>
+	<div class="filter"></div>
+	<aside class="sidebar">
+		<p class="sidebar-link-container">
+			<a class="sidebar-link" href="#header">About</a>
+		</p>
+		<p class="sidebar-link-container">
+			<a class="sidebar-link" href="#projects">Projects</a>
+		</p>
+		<div class="sidebar-link-container">
+			<a class="sidebar-link" href="#contact">Contact</a>
+		</div>
+	</aside>
+	<section id="header" class="header">
+		<img class="header-image" src="img/undraw-designer.svg" alt="profile" />
+		<img class="blob" src="img/blob-shape.svg" alt="" />
+		<h1 class="header-heading">
+			Hi, I'm <a href="https://github.com/vlipatdev" id="name">Val Lipat</a>
+		</h1>
+		<p class="header-text">
+			I'm a front-end developer looking for a junior developer role. Welcome
+			to my portfolio.
+		</p>
+		<a class="header-button" href="#projects">Projects</a>
+		<svg class="header-icon">
+			<use href="img/sprite.svg#chevron-down"></use>
+		</svg>
+	</section>
+	<section class="about">
+		<h2 class="about-heading">I design & build websites</h2>
+		<div class="about-card-container">
+			<article class="about-card">
+				<svg class="about-card-illustration">
+					<use href="img/sprite.svg#undraw-fast-loading"></use>
+				</svg>
+				<div class="about-card-text">
+					<h3 class="about-card-heading">Fast</h3>
+					<p>Loads instantly.</p>
+				</div>
+			</article>
+			<article class="about-card">
+				<svg class="about-card-illustration">
+					<use href="img/sprite.svg#undraw-web-devices"></use>
+				</svg>
+				<div class="about-card-text">
+					<h3 class="about-card-heading">Responsive</h3>
+					<p>Adapts to any screen resolution.</p>
+				</div>
+			</article>
+			<article class="about-card">
+				<svg class="about-card-illustration">
+					<use href="img/sprite.svg#undraw-in-thought"></use>
+				</svg>
+				<div class="about-card-text">
+					<h3 class="about-card-heading">Modern</h3>
+					<p>Designed using the latest trends in web design.</p>
+				</div>
+			</article>
+		</div>
+	</section>
+	<section id="projects" class="projects">
+		<h2 class="project-heading">Projects</h2>
+		<article class="project-container">
+			<div class="project-image-wrapper project-image-wrapper-right">
+				<img class="project-image" src="img/movie-library.png" alt="movie library screenshot" />
 			</div>
-		</a>
-		<div class="filter"></div>
-		<aside class="sidebar">
-			<p class="sidebar-link-container">
-				<a class="sidebar-link" href="#header">About</a>
-			</p>
-			<p class="sidebar-link-container">
-				<a class="sidebar-link" href="#projects">Portfolio</a>
-			</p>
-			<div class="sidebar-link-container">
-				<a class="sidebar-link" href="#contact">Contact</a>
-			</div>
-		</aside>
-		<section id="header" class="header">
-			<img class="header-image" src="img/undraw-designer.svg" alt="profile" />
-			<img class="blob" src="img/blob-shape.svg" alt="" />
-			<h1 class="header-heading">
-				Hi, I'm <a href="https://github.com/vlipatdev" id="name">Val Lipat</a>
-			</h1>
-			<p class="header-text">
-				I'm a front-end developer looking for a junior developer role. Welcome
-				to my portfolio.
-			</p>
-			<a class="header-button" href="#projects">Portfolio</a>
-			<svg class="header-icon">
-				<use href="img/sprite.svg#chevron-down"></use>
-			</svg>
-		</section>
-		<section class="about">
-			<h2 class="about-heading">I design & build websites</h2>
-			<div class="about-card-container">
-				<article class="about-card">
-					<svg class="about-card-illustration">
-						<use href="img/sprite.svg#undraw-fast-loading"></use>
+			<div class="project-wrapper">
+				<h3 class="project-title">Movie Library</h3>
+				<div class="project-icon-container">
+					<svg class="project-icon project-icon-html5">
+						<use href="img/sprite.svg#html5"></use>
 					</svg>
-					<div class="about-card-text">
-						<h3 class="about-card-heading">Fast</h3>
-						<p>Loads instantly.</p>
-					</div>
-				</article>
-				<article class="about-card">
-					<svg class="about-card-illustration">
-						<use href="img/sprite.svg#undraw-web-devices"></use>
+					<span class="project-icon-label">HTML5</span>
+					<svg class="project-icon project-icon-sass">
+						<use href="img/sprite.svg#sass"></use>
 					</svg>
-					<div class="about-card-text">
-						<h3 class="about-card-heading">Responsive</h3>
-						<p>Adapts to any screen resolution.</p>
-					</div>
-				</article>
-				<article class="about-card">
-					<svg class="about-card-illustration">
-						<use href="img/sprite.svg#undraw-in-thought"></use>
+					<span class="project-icon-label">SASS</span>
+					<svg class="project-icon project-icon-javascript">
+						<use href="img/sprite.svg#javascript"></use>
 					</svg>
-					<div class="about-card-text">
-						<h3 class="about-card-heading">Modern</h3>
-						<p>Designed using the latest trends in web design.</p>
-					</div>
-				</article>
-			</div>
-		</section>
-		<section id="projects" class="projects">
-			<h2 class="project-heading">Projects</h2>
-			<article class="project-container">
-				<div class="project-image-wrapper project-image-wrapper-right">
-					<img
-						class="project-image"
-						src="img/movie-library.png"
-						alt="movie library screenshot"
-					/>
+					<span class="project-icon-label">JavaScript</span>
 				</div>
-				<div class="project-wrapper">
-					<h3 class="project-title">Movie Library</h3>
-					<div class="project-icon-container">
-						<svg class="project-icon project-icon-html5">
-							<use href="img/sprite.svg#html5"></use>
-						</svg>
-						<span class="project-icon-label">HTML5</span>
-						<svg class="project-icon project-icon-sass">
-							<use href="img/sprite.svg#sass"></use>
-						</svg>
-						<span class="project-icon-label">SASS</span>
-						<svg class="project-icon project-icon-javascript">
-							<use href="img/sprite.svg#javascript"></use>
-						</svg>
-						<span class="project-icon-label">JavaScript</span>
-					</div>
-					<p class="project-text">
-						A movie browser powered by The Movie Database API.
-						<b>Features:</b> Infinite scroll, search, sort, local storage.
-					</p>
-					<div class="project-button-container">
-						<a
-							class="project-button"
-							href="https://movie-library-vl.herokuapp.com/"
-							>Visit website</a
-						>
-						<a
-							class="project-button project-button-github"
-							href="https://github.com/vlipatdev/movie-library"
-							>View code</a
-						>
-					</div>
-				</div>
-			</article>
-			<article class="project-container">
-				<div class="project-image-wrapper">
-					<img
-						class="project-image"
-						src="img/got-ipsum.png"
-						alt="got ipsum screenshot"
-					/>
-				</div>
-				<div class="project-wrapper">
-					<h3 class="project-title">Game of Thrones Ipsum</h3>
-					<div class="project-icon-container">
-						<svg class="project-icon project-icon-html5">
-							<use href="img/sprite.svg#html5"></use>
-						</svg>
-						<span class="project-icon-label">HTML5</span>
-						<svg class="project-icon project-icon-css3">
-							<use href="img/sprite.svg#css3"></use>
-						</svg>
-						<span class="project-icon-label">CSS3</span>
-						<svg class="project-icon project-icon-javascript">
-							<use href="img/sprite.svg#javascript"></use>
-						</svg>
-						<span class="project-icon-label">JavaScript</span>
-					</div>
-					<p class="project-text">
-						User-friendly Game of Thrones placeholder text generator made with
-						JavaScript. This application allows the users to choose a specific
-						character from the series.
-					</p>
-					<div class="project-button-container">
-						<a
-							class="project-button"
-							href="https://vlipatdev.github.io/game-of-thrones-text-generator/"
-							>Visit website</a
-						>
-						<a
-							class="project-button project-button-github"
-							href="https://github.com/vlipatdev/game-of-thrones-text-generator"
-							>View code</a
-						>
-					</div>
-				</div>
-			</article>
-			<article class="project-container">
-				<div class="project-image-wrapper project-image-wrapper-right">
-					<img
-						class="project-image"
-						src="img/crypto-marketcap.png"
-						alt="crypto marketcap screenshot"
-					/>
-				</div>
-				<div class="project-wrapper">
-					<h3 class="project-title">Cryptocurrency Prices and Market Cap</h3>
-					<div class="project-icon-container">
-						<svg class="project-icon project-icon-html5">
-							<use href="img/sprite.svg#html5"></use>
-						</svg>
-						<span class="project-icon-label">HTML5</span>
-						<svg class="project-icon project-icon-css3">
-							<use href="img/sprite.svg#css3"></use>
-						</svg>
-						<span class="project-icon-label">CSS3</span>
-						<svg class="project-icon project-icon-javascript">
-							<use href="img/sprite.svg#javascript"></use>
-						</svg>
-						<span class="project-icon-label">JavaScript</span>
-					</div>
-					<p class="project-text">
-						A webpage that displays the current prices and market
-						capitalizations of the top 250 cryptocurrencies. Powered by CoinCap
-						API 2.0
-					</p>
-					<div class="project-button-container">
-						<a
-							class="project-button"
-							href="https://vlipatdev.github.io/cryptocurrency-marketcap/"
-							>Visit website</a
-						>
-						<a
-							class="project-button project-button-github"
-							href="https://github.com/vlipatdev/cryptocurrency-marketcap"
-							>View code</a
-						>
-					</div>
-				</div>
-			</article>
-			<article class="project-container">
-				<div class="project-image-wrapper">
-					<img
-						class="project-image"
-						src="img/frontend-resources.png"
-						alt="frontend resources screenshot"
-					/>
-				</div>
-				<div class="project-wrapper">
-					<h3 class="project-title">Front-end Resources</h3>
-					<div class="project-icon-container">
-						<svg class="project-icon project-icon-html5">
-							<use href="img/sprite.svg#html5"></use>
-						</svg>
-						<span class="project-icon-label">HTML5</span>
-						<svg class="project-icon project-icon-css3">
-							<use href="img/sprite.svg#css3"></use>
-						</svg>
-						<span class="project-icon-label">CSS3</span>
-						<svg class="project-icon project-icon-javascript">
-							<use href="img/sprite.svg#javascript"></use>
-						</svg>
-						<span class="project-icon-label">JavaScript</span>
-					</div>
-					<p class="project-text">
-						A curated collection of useful tools and websites for front-end web
-						developers.
-					</p>
-					<div class="project-button-container">
-						<a
-							class="project-button"
-							href="https://vlipatdev.github.io/frontend-resources/"
-							>Visit website</a
-						>
-						<a
-							class="project-button project-button-github"
-							href="https://github.com/vlipatdev/frontend-resources"
-							>View code</a
-						>
-					</div>
-				</div>
-			</article>
-		</section>
-		<section id="contact" class="contact">
-			<h2 class="contact-heading">Get in touch</h2>
-			<p class="contact-text">
-				I'm open to junior-level developer jobs.
-				<span class="contact-email">Contact me at vlipat.dev@gmail.com.</span>
-			</p>
-			<a class="contact-button" href="mailto:vlipat.dev@gmail.com"
-				>Send me an email</a
-			>
-			<div class="footer">
-				<a href="https://github.com/vlipatdev">
-					<svg class="footer-icon">
-						<use href="img/sprite.svg#github"></use>
-					</svg>
-				</a>
-				<p class="footer-text">
+				<p class="project-text">
+					A movie browser powered by The Movie Database API.
+					<b>Features:</b> Infinite scroll, search, sort, local storage.
 				</p>
+				<div class="project-button-container">
+					<a class="project-button" href="https://movie-library-vl.herokuapp.com/">Visit website</a>
+					<a class="project-button project-button-github" href="https://github.com/vlipatdev/movie-library">View
+						code</a>
+				</div>
 			</div>
-		</section>
-	</body>
+		</article>
+		<article class="project-container">
+			<div class="project-image-wrapper">
+				<img class="project-image" src="img/got-ipsum.png" alt="got ipsum screenshot" />
+			</div>
+			<div class="project-wrapper">
+				<h3 class="project-title">Game of Thrones Ipsum</h3>
+				<div class="project-icon-container">
+					<svg class="project-icon project-icon-html5">
+						<use href="img/sprite.svg#html5"></use>
+					</svg>
+					<span class="project-icon-label">HTML5</span>
+					<svg class="project-icon project-icon-css3">
+						<use href="img/sprite.svg#css3"></use>
+					</svg>
+					<span class="project-icon-label">CSS3</span>
+					<svg class="project-icon project-icon-javascript">
+						<use href="img/sprite.svg#javascript"></use>
+					</svg>
+					<span class="project-icon-label">JavaScript</span>
+				</div>
+				<p class="project-text">
+					User-friendly Game of Thrones placeholder text generator made with
+					JavaScript. This application allows the users to choose a specific
+					character from the series.
+				</p>
+				<div class="project-button-container">
+					<a class="project-button" href="https://vlipatdev.github.io/game-of-thrones-text-generator/">Visit website</a>
+					<a class="project-button project-button-github"
+						href="https://github.com/vlipatdev/game-of-thrones-text-generator">View code</a>
+				</div>
+			</div>
+		</article>
+		<article class="project-container">
+			<div class="project-image-wrapper project-image-wrapper-right">
+				<img class="project-image" src="img/crypto-marketcap.png" alt="crypto marketcap screenshot" />
+			</div>
+			<div class="project-wrapper">
+				<h3 class="project-title">Cryptocurrency Prices and Market Cap</h3>
+				<div class="project-icon-container">
+					<svg class="project-icon project-icon-html5">
+						<use href="img/sprite.svg#html5"></use>
+					</svg>
+					<span class="project-icon-label">HTML5</span>
+					<svg class="project-icon project-icon-css3">
+						<use href="img/sprite.svg#css3"></use>
+					</svg>
+					<span class="project-icon-label">CSS3</span>
+					<svg class="project-icon project-icon-javascript">
+						<use href="img/sprite.svg#javascript"></use>
+					</svg>
+					<span class="project-icon-label">JavaScript</span>
+				</div>
+				<p class="project-text">
+					A webpage that displays the current prices and market
+					capitalizations of the top 250 cryptocurrencies. Powered by CoinCap
+					API 2.0
+				</p>
+				<div class="project-button-container">
+					<a class="project-button" href="https://vlipatdev.github.io/cryptocurrency-marketcap/">Visit website</a>
+					<a class="project-button project-button-github"
+						href="https://github.com/vlipatdev/cryptocurrency-marketcap">View code</a>
+				</div>
+			</div>
+		</article>
+		<article class="project-container">
+			<div class="project-image-wrapper">
+				<img class="project-image" src="img/frontend-resources.png" alt="frontend resources screenshot" />
+			</div>
+			<div class="project-wrapper">
+				<h3 class="project-title">Front-end Resources</h3>
+				<div class="project-icon-container">
+					<svg class="project-icon project-icon-html5">
+						<use href="img/sprite.svg#html5"></use>
+					</svg>
+					<span class="project-icon-label">HTML5</span>
+					<svg class="project-icon project-icon-css3">
+						<use href="img/sprite.svg#css3"></use>
+					</svg>
+					<span class="project-icon-label">CSS3</span>
+					<svg class="project-icon project-icon-javascript">
+						<use href="img/sprite.svg#javascript"></use>
+					</svg>
+					<span class="project-icon-label">JavaScript</span>
+				</div>
+				<p class="project-text">
+					A curated collection of useful tools and websites for front-end web
+					developers.
+				</p>
+				<div class="project-button-container">
+					<a class="project-button" href="https://vlipatdev.github.io/frontend-resources/">Visit website</a>
+					<a class="project-button project-button-github" href="https://github.com/vlipatdev/frontend-resources">View
+						code</a>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section id="contact" class="contact">
+		<h2 class="contact-heading">Get in touch</h2>
+		<p class="contact-text">
+			I'm open to junior-level developer jobs.
+			<span class="contact-email">Contact me at vlipat.dev@gmail.com.</span>
+		</p>
+		<a class="contact-button" href="mailto:vlipat.dev@gmail.com">Send me an email</a>
+		<div class="footer">
+			<a href="https://github.com/vlipatdev">
+				<svg class="footer-icon">
+					<use href="img/sprite.svg#github"></use>
+				</svg>
+			</a>
+			<p class="footer-text">
+			</p>
+		</div>
+	</section>
+</body>
+
 </html>
